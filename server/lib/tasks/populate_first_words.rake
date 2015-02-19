@@ -38,7 +38,13 @@ namespace :db do
           "juicy",
           "carpe",
           "tricky",
-          "elastic"
+          "elastic",
+          "simple",
+          "organic",
+          "crafty",
+          "steady",
+          "blue"
+
           ].sample,
 
         mood: [

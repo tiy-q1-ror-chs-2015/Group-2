@@ -1,0 +1,2 @@
+class SecondWordsController < ApplicationController
+end

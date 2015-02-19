@@ -1,0 +1,12 @@
+$h1-font-color: #1c1c1c;
+
+@mixin transition ($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  transition: $transition;
+}
+
+@font-face {
+  font-family: 'sipster';
+  src: url(SUNN.otf);
+}

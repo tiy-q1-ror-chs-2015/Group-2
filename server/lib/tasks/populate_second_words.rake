@@ -41,7 +41,15 @@ namespace :db do
           "special",
           "harmony",
           "junkie",
-          "winner"
+          "winner",
+          "ninja",
+          "Jane",
+          "steel",
+          "creampuff",
+          "monster",
+          "honeymoon",
+          "reserve",
+          "tightrope"
 
           ].sample,
 

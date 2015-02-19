@@ -43,7 +43,7 @@ namespace :db do
           "junkie",
           "winner"
 
-          ].sample
+          ].sample,
 
         mood: [
           

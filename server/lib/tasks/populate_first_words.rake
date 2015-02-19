@@ -39,8 +39,7 @@ namespace :db do
           "carpe",
           "tricky",
           "elastic"
-
-        ].sample
+          ].sample,
 
         mood: [
 
@@ -48,10 +47,8 @@ namespace :db do
           "type_two",
           "type_three",
           "type_four"
-          
-        ].sample
-        
-        )
+          ].sample
+          )
 
       u.save
     end

@@ -1,0 +1,69 @@
+.wrapper {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+h1 {
+    text-align: center;
+}
+
+.cocktail {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    margin-left: 38%;
+    margin-bottom: 5%;
+
+}
+.tagline {
+    text-align: center;
+}
+.page1 {
+    display: none;
+}
+h2 {
+    text-align: center;
+    width: 60%
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.home {
+    float: right;
+    width: 20%
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.emotionlist{
+    list-style-type: none;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+.emotionlist li {
+    display: inline-block;
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+}
+.emotionlist a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.bottomemotion {
+    margin-top: .5%;
+}
+
+
+
+/* .emotion {
+    display: none;
+} */
+/*.Drink {
+    display: none;
+}*/

@@ -1,0 +1,60 @@
+@import 'variables';
+
+body, h1, h2, h3, h4, h5, p, a {
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  width: 100%;
+  text-align: center;
+  padding-top: 40px;
+}
+
+h1 {
+  font-family: 'sipster';
+  font-size: 120px;
+  text-align: center;
+  color: $h1-font-color;
+}
+
+section {
+  margin: auto;
+  display: none;
+  .mood {
+    display: block;
+    text-align: center;
+    margin-top: 5%;
+  }
+}
+
+.moodbtn {
+    text-align: center;
+    width: 32%;
+    height: 300px;
+    margin: 12px;
+    font-family: 'PT Sans', Courier;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 1px 0px 0px #eee, 4px 2px 0px #707070;
+    padding: 30px 40px 30px 40px;
+    background: linear-gradient(rgba(255,255,244,0.5), rgba(255,255,244,0.5));
+    border: 8px double #707070;
+    &:hover {
+      border: 8px double black;
+      background: linear-gradient(rgba(112,112,112,0.5), rgba(112,112,112,0.5));
+      color: black;
+      @include transition(all 2s ease);
+
+
+  }
+}
+
+div{
+  display: none;
+}
+
+.active {
+  display: block;
+}

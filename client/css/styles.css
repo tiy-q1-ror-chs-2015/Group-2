@@ -1,69 +1,53 @@
-.wrapper {
-  max-width: 800px;
-  margin-right: auto;
-  margin-left: auto;
+@font-face {
+  font-family: 'sipster';
+  src: url(SUNN.otf); }
 
-}
+body, h1, h2, h3, h4, h5, p, a {
+  margin: 0;
+  padding: 0; }
+
+header {
+  width: 100%;
+  text-align: center;
+  padding-top: 40px; }
+
 h1 {
+  font-family: 'sipster';
+  font-size: 120px;
+  text-align: center;
+  color: #1c1c1c; }
+
+section {
+  margin: auto;
+  display: none; }
+  section .mood {
+    display: block;
     text-align: center;
-}
+    margin-top: 5%; }
 
-.cocktail {
-    background-color: blue;
-    width: 200px;
-    height: 200px;
-    margin-left: 38%;
-    margin-bottom: 5%;
+.moodbtn {
+  text-align: center;
+  width: 32%;
+  height: 300px;
+  margin: 12px;
+  font-family: 'PT Sans', Courier;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: black;
+  text-shadow: 1px 0px 0px #eee, 4px 2px 0px #707070;
+  padding: 30px 40px 30px 40px;
+  background: linear-gradient(rgba(255, 255, 244, 0.5), rgba(255, 255, 244, 0.5));
+  border: 8px double #707070; }
+  .moodbtn:hover {
+    border: 8px double black;
+    background: linear-gradient(rgba(112, 112, 112, 0.5), rgba(112, 112, 112, 0.5));
+    color: black;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    transition: all 2s ease; }
 
-}
-.tagline {
-    text-align: center;
-}
-.page1 {
-    display: none;
-}
-h2 {
-    text-align: center;
-    width: 60%
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-}
-.home {
-    float: right;
-    width: 20%
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    font-size: 15px;
-}
+div {
+  display: none; }
 
-.emotionlist{
-    list-style-type: none;
-    margin-top: 10%;
-    margin-left: 20%;
-}
-.emotionlist li {
-    display: inline-block;
-    background-color: blue;
-    width: 200px;
-    height: 200px;
-}
-.emotionlist a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.bottomemotion {
-    margin-top: .5%;
-}
-
-
-
-/* .emotion {
-    display: none;
-} */
-/*.Drink {
-    display: none;
-}*/
+.active {
+  display: block; }

@@ -1,60 +1,89 @@
 namespace :db do
   desc "fill first_words info in the db"
-  task :populate_first_words => :environment do
+  task :create_shoutouts => :environment do
+    10.times do
+     Shoutout.create!(
+      text: [
 
-    N = 100
-    require 'faker'
-    N.times do
-      u = FirstWord.new(
+          "Three's a crowd.",
+          "Let's party.",
+          "heyyyyyyyy",
+          "congrats!",
+          "You are special.",
+          "Here's to you!",
+          "booyah!",
+          "haters gonna hate",
+          "ice ice baby",
+          "fun times",
+          "Everybody Footloose!"
 
-        data: [
-
-          "crazy",
-          "Manhattan",
-          "Portland",
-          "smooth",
-          "sturdy",
-          "dirty",
-          "pickled",
-          "careful",
-          "funky",
-          "sexy",
-          "sunlit",
-          "fuzzy",
-          "cabin",
-          "nappy",
-          "lone",
-          "bashful",
-          "banana",
-          "perky",
-          "weeping",
-          "thoughtful",
-          "daily",
-          "murky",
-          "sundance",
-          "extreme",
-          "restful",
-          "stovetop",
-          "tiny",
-          "juicy",
-          "carpe",
-          "tricky",
-          "elastic"
           ].sample,
 
-        mood: [
-
-          "type_one",
-          "type_two",
-          "type_three",
-          "type_four"
-
-          ].sample
-          )
-
-      u.save
+      mood: "type_one" 
+      )
     end
-  end
+    10.times do
+     Shoutout.create!(
+      text: [
 
-  puts "100 Fake first_word records have been created and stored in db"
+          "Don't try this at home.",
+          "O.O",
+          "let me introduce you to my best friend Google....",
+          "You're number zero in my heart.",
+          "I totally just called an Uber for you.",
+          "Tinder is so last year.",
+          "Don't you have a curfew?",
+          "You might be the perfect spoon.",
+          "Let's make some magic.",
+          "RAWR",
+
+          ].sample,
+
+      mood: "type_two" 
+      )
+    end
+    10.times do
+     Shoutout.create!(
+      text: [
+
+          "that's how we roll",
+          "remember that time when.....",
+          "We are family.",
+          "music to my beers",
+          "sharing is caring",
+          "You're my treasure.",
+          "Third time's a charm.",
+          "Let's salsa.",
+          "and we have a winner!",
+          "Vote For Pedro",
+          "you bettah WERK"
+
+          ].sample,
+
+      mood: "type_three" 
+      )
+    end
+    10.times do
+     Shoutout.create!(
+      text: [
+
+        "Simply put, I'm in the business of making magic.",
+        "that's the money",
+        "5 6 7 8 !!",
+        "grand slam!",
+        "Have you heard about K-Pop?",
+        "Be Yonce Say that again.",
+        "don't judge",
+        "there's room for all of us",
+        "don't do anything I wouldn't do",
+        "Here's to us!",
+        "Let me take you down to Kokomo."
+        
+        ].sample,
+
+      mood: "type_four"   
+      )
+    end
+  puts "40 shoutouts have been created in the database."
+end
 end

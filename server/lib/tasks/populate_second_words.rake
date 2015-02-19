@@ -41,7 +41,15 @@ namespace :db do
           "special",
           "harmony",
           "junkie",
-          "winner"
+          "winner",
+          "ninja",
+          "Jane",
+          "steel",
+          "creampuff",
+          "monster",
+          "honeymoon",
+          "reserve",
+          "tightrope"
 
           ].sample,
 
@@ -59,6 +67,5 @@ namespace :db do
       u.save
     end
   end
-
   puts "100 Fake second_word records have been created and stored in db"
 end

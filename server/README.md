@@ -3,7 +3,7 @@
 Iron Yard Assignment:
 We were given an open-ended assignment to collaborate in either 4 or 5 person teams.  2 - 3 team members are from the Ruby on Rails class and 2 members are from the Front End Engineering Class.
 
-The purpose of this assignment is to create end points that act as API "contracts" between front end and back end.  This is our first Iron Yard collab between the FEE and ROR classes.  We were instructed to use BOTH the rails framework AND a frontend frameword that is based on Bower and Node.  Two server ports will be utilized to display the app to the end user.
+The purpose of this assignment is to create end points that act as API "contracts" between front end and back end.  This is our first Iron Yard collab between the FEE and ROR classes.  We were instructed to use BOTH the rails framework AND a frontend framework that is based on Bower and Node.  Two server ports will be utilized to display the app to the end user.
 
 After brainstorming, we decided to create a fun app called SIPSTER.
 
@@ -31,6 +31,7 @@ The frontend designers will designate a good place to add a comment stream.
 
 Users will be able to comment in general about their interaction with the Sipster app.  We hope to further customize this feature in the future.
 
+6:45pm:
 Rails controllers, models, migrations, and rake tasks for both first_words and second_words to populate starter data have been created.  We are using the faker gem to provide fake data.
 
          "Three's a crowd.",
@@ -66,3 +67,6 @@ Rails controllers, models, migrations, and rake tasks for both first_words and s
           "Let's salsa.",
           "and we have a winner!",
           "Vote For Pedro"
+
+11:59pm:
+We now have 4 rake tasks, 4 migrations, and some decent looking real words and phrases populating our Sipster database.  We also added a shoutouts controller and a comments controller, both of which include .json formatted responses.  Next we need to assess what our end points need to look like via full team consultation.

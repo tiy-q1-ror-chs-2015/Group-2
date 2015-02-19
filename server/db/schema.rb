@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150218233505) do
+ActiveRecord::Schema.define(version: 20150219021923) do
+
+  create_table "comments", force: :cascade do |t|
+    t.text     "text",       limit: 65535
+    t.string   "mood",       limit: 255
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
 
   create_table "first_words", force: :cascade do |t|
     t.string   "data",       limit: 255
@@ -22,6 +29,13 @@ ActiveRecord::Schema.define(version: 20150218233505) do
 
   create_table "second_words", force: :cascade do |t|
     t.string   "data",       limit: 255
+    t.string   "mood",       limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  create_table "shoutouts", force: :cascade do |t|
+    t.string   "text",       limit: 255
     t.string   "mood",       limit: 255
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false

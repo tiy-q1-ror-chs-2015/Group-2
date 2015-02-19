@@ -17,7 +17,7 @@ def index
     data = {
       word_one: @first_word,
       word_two: @second_word,
-      shoutouts: @shoutout
+      shoutouts: @shoutout,
       images: @image
     }
 

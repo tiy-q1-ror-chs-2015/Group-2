@@ -53,7 +53,9 @@ namespace :db do
           "type_two",
           "type_three",
           "type_four"
+
           ].sample
+          
           )
 
       u.save

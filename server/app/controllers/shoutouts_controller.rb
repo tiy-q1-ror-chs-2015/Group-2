@@ -11,6 +11,10 @@ class ShoutoutsController < ApplicationController
       format.json { render json: @shoutouts.to_json }
     end
 
+
+
+
+
   end
 
 end

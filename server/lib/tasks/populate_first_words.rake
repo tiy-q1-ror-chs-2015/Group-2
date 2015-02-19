@@ -43,7 +43,8 @@ namespace :db do
           "organic",
           "crafty",
           "steady",
-          "blue"
+          "blue",
+          "peachy keen"
 
           ].sample,
 

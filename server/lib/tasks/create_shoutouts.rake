@@ -77,7 +77,8 @@ namespace :db do
         "there's room for all of us",
         "don't do anything I wouldn't do",
         "Here's to us!",
-        "Let me take you down to Kokomo."
+        "Let me take you down to Kokomo.",
+        "50 shades of awesome."
         
         ].sample,
 

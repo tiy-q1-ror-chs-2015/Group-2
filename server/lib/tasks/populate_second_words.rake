@@ -49,7 +49,8 @@ namespace :db do
           "monster",
           "honeymoon",
           "reserve",
-          "tightrope"
+          "tightrope",
+          "rowboat"
 
           ].sample,
 

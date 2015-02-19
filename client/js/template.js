@@ -1,12 +1,12 @@
-var template = {}
+var templates = {}
 
-    template.drinkEmotion = [
+    templates.drinkEmotion = [
 
-    "<h3><%= word1 %></h3>",
-    "<h3><%= word2 %></h3>",
-    "<h4><%= tagline %></h4>",
-    "<h4><%= username %></h4>",
-    "<img src= <%= drink %> />"
+    "<h3><%= word_one %></h3>",
+    "<h3><%= word_two %></h3>",
+    "<h4><%= shoutout %></h4>",
+    "<p><%= comments %></p>",
+    "<img src= <%= photo %> />"
 
 
 

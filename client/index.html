@@ -4,20 +4,17 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href ="css/styles.css">
     <title>Sipster</title>
+
+    <script type="text/template"id="drinkTmpl">
+      <button id="happy" class="moodbtn" rel="happy">Happy</button>
+      <button id="lonely" class="moodbtn" rel="lonely">Lonely</button>
+      <button id="inspired" class="moodbtn" rel="inspired">Inspired</button>
+      <button id="dark" class="moodbtn" rel='dark'>Dark</button>
+    </script>
 </head>
 <body>
 
-    <script type="text/template"id="drinkTmpl">
-        <img src='<%= image %>'>
-        <h3><%= word_one %></h3>
-        <h3><%= word_two %></h3>
-        <h4><%= shoutout %></h4>
 
-        });
-    </script>
-
-    <div class="hello">
-    </div>
 
   <header>
     <h1>Sipster</h1>
@@ -25,10 +22,7 @@
   <section class='active'>
     <div class="mood active">
       <h2>Pick a mood, any mood:</h2>
-      <button id="happy" class="moodbtn" rel="happy">Happy</button>
-      <button id="lonely" class="moodbtn" rel="lonely">Lonely</button>
-      <button id="inspired" class="moodbtn" rel="inspired">Inspired</button>
-      <button id="dark" class="moodbtn" rel='dark'>Dark</button>
+
     </div>
   </section>
 

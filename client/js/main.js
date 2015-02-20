@@ -1,11 +1,18 @@
 
-
+var App = {};
+$(function() {
+  App.router = new Router();
+  Backbone.history.start();
+});
 
 
 
 
 $(document).ready(function(){
 
+
+
+var drinkView = new DrinkView();
 
 
   $('section div').on('click', 'button', function(event){

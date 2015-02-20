@@ -28,6 +28,17 @@ section {
   }
 }
 
+h2 {
+  font-size: 24px;
+  font-family: 'Zorus_Serif', serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: -55px;
+  padding-bottom: 41px;
+  letter-spacing: 1.5px;
+
+}
+
 .moodbtn {
     text-align: center;
     width: 32%;
@@ -46,10 +57,61 @@ section {
       background: linear-gradient(rgba(112,112,112,0.5), rgba(112,112,112,0.5));
       color: black;
       @include transition(all 2s ease);
-
-
   }
 }
+
+.chosenOne {
+  @include chosen(rise 2s forwards);
+}
+
+.animate {
+  @include animateDown(animation 4s);
+  opacity:0;
+  transform: translateY(1000px);
+}
+
+.fadein {
+  @include fadein(fade 2s .5s backwards);
+}
+
+//KEYFRAMES
+
+@-webkit-keyframes animation{
+  0%{
+    opacity:100;
+    -webkit-transform: rotate(20deg);
+  }
+  100%
+  {
+    opacity:0;
+    transform: translateY(1000px);
+    display:none;
+  }
+}
+
+
+@-webkit-keyframes rise{
+  0%{
+  }
+  100%
+  {
+    -webkit-transform: translateY(-250px);
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fade {
+  0%{
+    opacity:0;
+  }
+  100%
+  {
+    opacity:1;
+  }
+}
+
+
+//SHOW/HIDES
 
 div{
   display: none;

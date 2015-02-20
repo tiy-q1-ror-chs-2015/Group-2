@@ -7,13 +7,11 @@
 </head>
 <body>
 
-
     <script type="text/template"id="drinkTmpl">
         <img src='<%= image %>'>
         <h3><%= word_one %></h3>
         <h3><%= word_two %></h3>
         <h4><%= shoutout %></h4>
-        <p><%= comments %></p>
 
         });
     </script>
@@ -26,11 +24,11 @@
   </header>
   <section class='active'>
     <div class="mood active">
-      <h2>How are you feeling today?</h2>
-      <button class="moodbtn" rel="happy">Happy</button>
-      <button class="moodbtn" rel="lonely">Lonely</button>
-      <button class="moodbtn" rel="inspired">Inspired</button>
-      <button class="moodbtn" rel='dark'>Dark</button>
+      <h2>Pick a mood, any mood:</h2>
+      <button id="happy" class="moodbtn" rel="happy">Happy</button>
+      <button id="lonely" class="moodbtn" rel="lonely">Lonely</button>
+      <button id="inspired" class="moodbtn" rel="inspired">Inspired</button>
+      <button id="dark" class="moodbtn" rel='dark'>Dark</button>
     </div>
   </section>
 

@@ -55,14 +55,14 @@ namespace :db do
           ].sample,
 
         mood: [
-          
-          "type_one",
-          "type_two",
-          "type_three",
-          "type_four"
+
+          "happy",
+          "lonely",
+          "inspired",
+          "dark"
 
         ].sample
-        
+
         )
 
       u.save

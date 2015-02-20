@@ -16,15 +16,16 @@ var DrinkView = Backbone.View.extend({
     this.$el.html(this.template({data: 'something'}));
     return this;
   },
-  submitDrink: function() {
-    event.preventDefault();
+  submitDrink: function(e) {
+    e.preventDefault();
 
-    var mood = $(this).attr('rel');
-    console.log(this);
+    var mood = $(e.target).attr('rel');
+
+    console.log(mood);
     console.log(this.$el);
     // this.model = new DrinkPost(mood);
     // this.model.save();
-    App.router.navigate('mood?submitDrink'+ mood, true);
+    App.router.navigate('mood?submitDrink='+ mood, true);
   }
 });
 

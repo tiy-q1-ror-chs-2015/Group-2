@@ -19,7 +19,7 @@ namespace :db do
 
           ].sample,
 
-      mood: "type_one" 
+      mood: "happy"
       )
     end
     10.times do
@@ -39,7 +39,7 @@ namespace :db do
 
           ].sample,
 
-      mood: "type_two" 
+      mood: "lonely"
       )
     end
     10.times do
@@ -60,7 +60,7 @@ namespace :db do
 
           ].sample,
 
-      mood: "type_three" 
+      mood: "inspired"
       )
     end
     10.times do
@@ -79,13 +79,12 @@ namespace :db do
         "Here's to us!",
         "Let me take you down to Kokomo.",
         "50 shades of awesome."
-        
+
         ].sample,
 
-      mood: "type_four"   
+      mood: "dark"   
       )
     end
   puts "40 shoutouts have been created in the database."
 end
 end
-

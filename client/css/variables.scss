@@ -6,6 +6,37 @@ $h1-font-color: #1c1c1c;
   transition: $transition;
 }
 
+@mixin chosen ($chosen) {
+  animation: $chosen;
+  -webkit-animation: $chosen;
+  -moz-animation: $chosen;
+}
+
+@mixin animateDown ($animateDown) {
+  animation: $animateDown;
+  -webkit-animation: $animateDown;
+  -moz-animation: $animateDown;
+}
+
+@mixin fadein ($fadein) {
+  animation: $fadein;
+  -webkit-animation: $fadein;
+  -moz-animation: $fadein;
+}
+
+@mixin sepia ($sepia) {
+  filter: $sepia;
+  -webkit-filter: $sepia;
+  -moz-filter: $sepia;
+}
+
+@mixin shadow($shadow){
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+
 @font-face {
   font-family: 'sipster';
   src: url(SUNN.otf);

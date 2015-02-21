@@ -7,12 +7,13 @@ $(function() {
 
 
 
-
 $(document).ready(function(){
 
 
 
 var drinkView = new DrinkView();
+
+var drinkNamesView = new DrinkNameView();
 
 
   $('section div').on('click', 'button', function(event){

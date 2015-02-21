@@ -32,49 +32,54 @@ var DrinkView = Backbone.View.extend({
 
 //Collection View
 
-var StudentsView = Backbone.View.extend({
-  tagName: 'body',
-  template: _.template($('#drinkTmpl').html()),
+
+
+
+var DrinkNameView = Backbone.View.extend({
+  tagName: 'article',
+  template: _.template($('#displayTmpl').text()),
+  initialize: function() {
+    console.log('DrinkNameViewWorkign')
+    this.render();
+    $('.mood').append(this.el);
+
+    },
+
+    // render: function() {
+    //     var markup = this.template(this.model.attributes);
+    //     this.$el.html(markup);
+    //     return this;
+    // }
+
+
+});
+
+
+//////collection view////////////////////////////////////
+
+var drinkNamesView= Backbone.View.extend({
+  tagName: 'section',
+  template: _.template($('#displayTmpl').html()),
   initialize: function() {
     console.log("im defined!");
     this.render();
     $('.mood').append(this.el);
+},
 
-  },
-
-  events: {
-    "click .moodbtn": "createDrink"
-  },
   render: function() {
     this.addAll();
     return this;
   },
-  addOne: function(drinkModel) {
+  addOne: function(drinkPostModel) {
 
-    var drinkView = new DrinkView({model: drinkModel});
-    this.$el.append(drinkView.render().el);
+    var drinkNameView = new DrinkNameView({model: drinkPostModel});
+    this.$el.append(drinkNameView.render().el);
 
   },
   addAll: function() {
 
     _.each(this.collection.models, this.addOne, this);
 
-  },
-
-createDrink: function(event) {
-  event.preventDefault();
-
-  var mood = $(this).attr('rel');
-  // var newDrink = {
-  //
-  //   name:  mine.find('input[name="name"]').val(),
-  //   bio: mine.find('textarea[name="bio"]').val(),
-  //   wingspan: mine.find('input[name="wingspan"]').val(),
-  //   photo: mine.find('input[name="photo"]').val()
-  //
-  // };
-  var drinkModel = new DrinkPost(mood);
-  drinkModel.save();
-}
+  }
 
 });

@@ -19,7 +19,7 @@ h1 {
 
 section {
   margin: auto;
-  display: none; }
+}
   section .mood {
     display: block;
     text-align: center;

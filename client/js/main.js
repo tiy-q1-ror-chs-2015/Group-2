@@ -1,4 +1,3 @@
-
 var App = {};
 $(function() {
   App.router = new Router();
@@ -11,13 +10,13 @@ $(document).ready(function(){
 
 
 
-var drinkView = new DrinkView();
+// var drinkView = new DrinkView();
 
-var drinkNamesView = new DrinkNameView();
+// var drinkNamesView = new DrinkNameView();
 
 
   $('section div').on('click', 'button', function(event){
-    event.preventDefault();
+    // event.preventDefault();
     var relatedMood = '.' + $(this).attr('rel');
     $(this).siblings('button').addClass('animate');
     $(this).siblings('h2').fadeOut('slow');

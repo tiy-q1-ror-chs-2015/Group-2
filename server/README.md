@@ -70,3 +70,9 @@ Rails controllers, models, migrations, and rake tasks for both first_words and s
 
 11:59pm:
 We now have 4 rake tasks, 4 migrations, and some decent looking real words and phrases populating our Sipster database.  We also added a shoutouts controller and a comments controller, both of which include .json formatted responses.  Next we need to assess what our end points need to look like via full team consultation.
+
+2-21-2015 8:39pm:
+We have updated some data structures and one rake task and we are getting close to being able to pass data from front end to back end.
+
+2-23-2015 1:50pm:
+We have a functional working app!  The user sees four mood choices that look like oversized drink bubbles.  Upon click the bubbles float away and a faux drink name, shoutout, and cute drink icon appears.  That's the app! Word.  The main challenges for our team were related to passing data from front end to back end and vs. versa.  A good deal of time and effort on the part of the entire team went into solving this issue. Everything else seemed relatively easy and fun to produce.

@@ -38,7 +38,7 @@
 
 var DrinkNameView = Backbone.View.extend({
   tagName: 'article',
-  className : 'player',
+  className : 'results',
   template: _.template($('#displayTmpl').text()),
   initialize: function() {
     console.log('DrinkNameViewWorking')

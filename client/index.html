@@ -6,9 +6,9 @@
   <title>Sipster</title>
 
   <script type="text/template" id="displayTmpl">
-    <%= word_one.data %>
-    <%= word_two.data %>
+    <h3><span class='wordone'><%= word_one.data %></span> <span class='wordtwo'><%= word_two.data %></span></h3>
     <br>
+
     <%= shoutouts.text %>
     <br>
     <img src = "<%= images.text %>">
@@ -18,14 +18,15 @@
 <body>
 
 
-
   <header>
     <h1>Sipster</h1>
   </header>
+<button class='home'><a href="index.html">HOME</a></button>
 
-  <h2>Pick a mood, any mood:</h2>
+  <!-- <h2>Pick a mood, any mood:</h2> -->
   <section class='active'>
     <div class="mood active">
+      <h2>Pick a mood, any mood:</h2>
       <button id="happy" class="moodbtn" rel="happy">Happy</button>
       <button id="lonely" class="moodbtn" rel="lonely">Lonely</button>
       <button id="inspired" class="moodbtn" rel="inspired">Inspired</button>

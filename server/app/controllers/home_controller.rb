@@ -21,11 +21,10 @@ def index
       images: @image
     }
 
-<<<<<<< HEAD
     puts "this is the data #{data}"
-=======
+
     p "sending #{data}"
->>>>>>> efa26530cae1c23ea309f260ba78f1fa13cb7535
+
 
     respond_to do |format|
       format.json { render json: data }

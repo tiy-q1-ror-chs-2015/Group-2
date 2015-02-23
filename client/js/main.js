@@ -1,12 +1,10 @@
 var App = {};
 $(function() {
-  App.router = new AppRouter();
+  App.router = new Router();
   Backbone.history.start();
 });
+/*
 
-
-
-<<<<<<< HEAD
 
 $(document).ready(function(){
 
@@ -27,5 +25,4 @@ var drinkView = new DrinkView();
   });
 
 });
-=======
->>>>>>> efa26530cae1c23ea309f260ba78f1fa13cb7535
+*/

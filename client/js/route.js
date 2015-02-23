@@ -1,37 +1,15 @@
+
 var Router = Backbone.Router.extend({
   initialize: function() {
     console.log('routes have started')
   },
   routes: {
-      "mood_lonely": "moodShowLonely",
-      "mood_happy": "moodShowHappy",
-      "mood_inspired": "moodShowInspired",
-      "mood_dark": "moodShowDark",
-      // "drink": "drink"
+    "mood_lonely": "moodShowLonely",
+    "mood_happy": "moodShowHappy",
+    "mood_inspired": "moodShowInspired",
+    "mood_dark": "moodShowDark",
+    // "drink": "drink"
   },
-
-
-    mood: function() {
-      // this.loadView(new DrinkView());
-      var self = this;
-      var drinks = new DrinkCollections();
-      $('.moodbtn').on('click', function(){
-        var buttonInfo = $(this).attr('rel');
-        console.log(buttonInfo);
-
-      });
-      // {data: $.param({limit: 2})}
-      drinks.fetch({data: $.param({mood: 'happy'})}).then(function() {
-        self.loadView(new StudentsView({collection: drinks}));
-      });
-    },
-
-
-    loadView: function(view) {
-      this.view && this.view.remove();
-      this.view = view;
-    }
-  });
 
   moodShowLonely: function() {
     var self = this;

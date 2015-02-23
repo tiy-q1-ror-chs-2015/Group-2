@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href ="css/styles.css">
-    <title>Sipster</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href ="css/styles.css">
+  <title>Sipster</title>
 
-    <script type="text/template"id="drinkTmpl">
-      <button id="happy" class="moodbtn" rel="happy"><a href="http://localhost:9000">Happy</a></button>
-      <button id="lonely" class="moodbtn" rel="lonely">Lonely</button>
-      <button id="inspired" class="moodbtn" rel="inspired">Inspired</button>
-      <button id="dark" class="moodbtn" rel='dark'>Dark</button>
-    </script>
+  <script type="text/template" id="displayTmpl">
+    <%= word_one.data %>
+    <%= word_two.data %>
+    <br>
+    <%= shoutouts.text %>
+    <br>
+    <img src = "<%= images.text %>">
+  </script>
 
-    <script type="text/template"id="Tmpl">
-      <p><%= first_words %></p>
-      <p><%= second_words  %></p>
-      <p><%= shoutouts  %></p>
-      <p><%= comments  %></p>
-      <img src="<%= images %>">
-    </script>
 </head>
 <body>
 
@@ -27,27 +22,29 @@
   <header>
     <h1>Sipster</h1>
   </header>
+
+  <h2>Pick a mood, any mood:</h2>
   <section class='active'>
     <div class="mood active">
-      <h2>Pick a mood, any mood:</h2>
+      <button id="happy" class="moodbtn" rel="happy">Happy</button>
+      <button id="lonely" class="moodbtn" rel="lonely">Lonely</button>
+      <button id="inspired" class="moodbtn" rel="inspired">Inspired</button>
+      <button id="dark" class="moodbtn" rel='dark'>Dark</button>
     </div>
   </section>
-  <div class="result"></div>
 
 
+  <script src="bower_components/underscore/underscore.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/backbone/backbone.js"></script>
 
-
-
-<script src="bower_components/underscore/underscore.js"></script>
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/backbone/backbone.js"></script>
-
-<script src="js/model.js"></script>
-<script src="js/collection.js"></script>
-<script src="js/view.js"></script>
-<script src="js/route.js"></script>
-<!-- <script src="js/template.js"></script> -->
-<script src="js/main.js"></script>
+  <script src="js/model.js"></script>
+  <script src="js/collection.js"></script>
+  <script src="js/view.js"></script>
+  <script src="js/route.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/other.js"></script>
 
 </body>
 </html>

@@ -3,7 +3,7 @@
 
 article {
   width:35%;
-  padding-left:29%;
+  padding-left:32%;
   img {
   width: 100%;
   height:200px;
@@ -15,6 +15,10 @@ article {
 }
 .wordtwo {
   color:black;
+}
+
+h3 {
+  font-size: 30px;
 }
 
 body, h1, h2, h3, h4, h5, p, a {
@@ -30,7 +34,7 @@ header{
 
 h1 {
   font-family: 'sipster';
-  font-size: 120px;
+  font-size: 140px;
   text-align: center;
   color: $h1-font-color;
 }
@@ -128,9 +132,11 @@ h2 {
 
 @-webkit-keyframes rise{
   0%{
+
   }
   100%
   {
+    -webkit-transform: translateX(-100px);
     -webkit-transform: translateY(-250px);
     opacity:0;
   }

@@ -38,7 +38,7 @@ var StudentsView = Backbone.View.extend({
   initialize: function() {
     console.log("im defined!");
     this.render();
-    $('.mood').append(this.el);
+    $('.result').append(this.el);
 
   },
 
@@ -64,7 +64,7 @@ var StudentsView = Backbone.View.extend({
 createDrink: function(event) {
   event.preventDefault();
 
-  var mood = $(this).attr('rel');
+  var mood = $(e.target).attr('rel');
   // var newDrink = {
   //
   //   name:  mine.find('input[name="name"]').val(),

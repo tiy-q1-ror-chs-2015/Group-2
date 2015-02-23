@@ -1,7 +1,7 @@
 
 var App = {};
 $(function() {
-  App.router = new Router();
+  App.router = new AppRouter();
   Backbone.history.start();
 });
 
@@ -9,8 +9,6 @@ $(function() {
 
 
 $(document).ready(function(){
-
-
 
 var drinkView = new DrinkView();
 

@@ -21,6 +21,8 @@ def index
       images: @image
     }
 
+    puts "this is the data #{data}"
+
     respond_to do |format|
       format.json { render json: data }
     end

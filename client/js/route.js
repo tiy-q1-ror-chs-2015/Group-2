@@ -1,13 +1,14 @@
+
 var Router = Backbone.Router.extend({
   initialize: function() {
     console.log('routes have started')
   },
   routes: {
-      "mood_lonely": "moodShowLonely",
-      "mood_happy": "moodShowHappy",
-      "mood_inspired": "moodShowInspired",
-      "mood_dark": "moodShowDark",
-      // "drink": "drink"
+    "mood_lonely": "moodShowLonely",
+    "mood_happy": "moodShowHappy",
+    "mood_inspired": "moodShowInspired",
+    "mood_dark": "moodShowDark",
+    // "drink": "drink"
   },
 
   moodShowLonely: function() {

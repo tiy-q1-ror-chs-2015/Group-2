@@ -1,3 +1,4 @@
+
 //Model View
 
 // var DrinkView = Backbone.View.extend({
@@ -37,6 +38,7 @@
 
 var DrinkNameView = Backbone.View.extend({
   tagName: 'article',
+  className : 'results',
   template: _.template($('#displayTmpl').text()),
   initialize: function() {
     console.log('DrinkNameViewWorking')
@@ -52,12 +54,12 @@ var DrinkNameView = Backbone.View.extend({
 //////collection view////////////////////////////////////
 
 var DrinkNamesView= Backbone.View.extend({
-  tagName: 'section',
+  tagName: 'results',
   initialize: function() {
     console.log("im DrinkNamesView defined!");
     this.render();
-    $('.mood').prepend(this.el);
-},
+    $('section').prepend(this.el);
+  },
 
   render: function() {
     this.addAll();
